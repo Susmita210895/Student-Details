@@ -45,21 +45,20 @@ main/resources/
    ```
 
 ## API Endpoints
-| HTTP Method | Endpoint             | Description                     |
-|------------|---------------------|---------------------------------|
-| GET        | `/students`         | Retrieve all students          |
-| POST       | `/students`         | Add a new student              |
+| HTTP Method | Endpoint                          | Description                          |
+|------------|------------------------------------|--------------------------------------|
+| GET        | `/students`                        | Retrieve all students                |
+| POST       | `/students`                        | Add a new student                    |
+| GET        | `/students/startWithM`             | get students name staring with M/m   |
+| GET        | `/students/countWordsMoreThanFive` | get student count with name length> 5|
 
 
-## License
-This project is licensed under the MIT License.
-
-4. Description:
+## Description
 The application Student Details has been designed to store details of the students and incorporate features allowing filtering students based on certain criteria. 
 The method countWordsStartingWithM() present in the class studentRecordFiltering helps in getting the number of students based on the first letter of their name.
 This method can be accessed using the endpoint '/students/startWithM' from the controller. 
 The method getWordsLongerThanFive() present in the class 'StudentRecordFiltering' helps in getting the list of student having long names(names with words greater than 5)
 This method can be accessed using the endpoint '/students/countWordsMoreThanFive' from the controller
 
-5. Scope
+## Scope
 At present the application is enabled for adding and fetching student details, but has scope for adding methods to delete, update and further filtering features as well. 
